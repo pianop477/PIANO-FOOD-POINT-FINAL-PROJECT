@@ -1,6 +1,5 @@
 <?php
 include('server.php');
-include('footer.php');
 include('header_admin.php');
 
 if(empty($_SESSION['user_id'])) {
@@ -11,7 +10,6 @@ if($_SESSION['user_type']!=1) {
 }
 $count = 1;
 $select_menus = mysqli_query($conn, "SELECT * FROM menus ORDER BY menu_name ASC");
-$empty_data = "No Menu Found";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +27,7 @@ $empty_data = "No Menu Found";
         <!--Navigation links--> 
 <!--section -->
 <section>
-  <div>
+  <diV class="container-fluid" style="position: absolute; width: 100%; margin-top: 4%;">
     <h2 class="text-center page-header" style="margin-top: auto;">Menu List</h2>
     <div style="display: flex; justify-content: space-between; align-items:center;">
         <h3>Foods Available</h3>
@@ -37,6 +35,7 @@ $empty_data = "No Menu Found";
             <a href="menus.php">ADD MENU</a>
         </span>
     </div>
+    <div>
     <table class="table table-responsive table-hover table-bordered table-lg">
       <thead style="font-size:1.7rem;">
           <tr>
@@ -49,7 +48,7 @@ $empty_data = "No Menu Found";
                     <?php 
                     if(empty(mysqli_num_rows($select_menus))) {
                       echo "<i><p style='text-align:center; font-size: 1.7rem; position: absolute; 
-                      margin-top: 5%; width: 100%; font-weight: bold; color: green;'>Current No Data Found</p></i>";
+                      margin-top: 5%; width: 100%; font-weight: bold; color: green;'>Current You have No Data Found</p></i>";
                     } else
                     while($row = mysqli_fetch_array($select_menus)) { ?>
                     <tbody>
@@ -74,6 +73,8 @@ $empty_data = "No Menu Found";
                     ?>
                     <?php }
                     ?>
+            </table>
+    </div>
                 
   </div>
 </section>
