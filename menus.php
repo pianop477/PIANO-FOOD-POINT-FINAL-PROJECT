@@ -29,7 +29,7 @@ if($_SESSION['user_type']!=1) {
         <div style="margin-top: auto;">
             <h2 class="text-center page-header">Add Menu</h2>
         </div>
-        <div style="width: 50%; align-content: center;">
+        <div class="container" style="width: 50%; align-content: center;">
             <span  style="color:green; align-content:center; font-weight:bold; font-size: 2rem;">
                 <?php if(isset($success_menus)) { echo $success_menus; } ?>
             </span>
