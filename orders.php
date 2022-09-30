@@ -47,7 +47,7 @@ if($_SESSION['user_type']!=0) {
                 <span id="err-quantity" style="color: red;"></span>
             </div>
             <div class="form-group">
-                <button type="submit" name="send_order" class="btn btn-success btn-block"><i class="glyphicon glyphicon-send"></i> SEND ORDER</button>
+                <button type="submit" name="send_order" class="btn btn-success btn-block"><i class="fa fa-send"></i> SEND ORDER</button>
             </div>
 
         </form>
