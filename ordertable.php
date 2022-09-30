@@ -1,6 +1,5 @@
 <?php 
 include('server.php');
-include('footer.php');
 include('header_admin.php');
 
 $select_menus = mysqli_query($conn, "SELECT customer.id, customer.first_name, customer.last_name,customer.email, customer.phone, 
@@ -32,8 +31,8 @@ if($_SESSION['user_type']!=1) {
     <body>
 <!--Navigation links--> 
 
-        <div>
-            <div class="text-center page-header" style="margin-top: auto;">
+        <div class="container-fluid" style="position: absolute; width: 100%; margin-top: 3%;">
+            <div class="text-center page-header">
                 <h2>List of Orders</h2>
             </div>
             <!--<a href="index.php" class="text-right">BACK</a>-->
@@ -56,7 +55,7 @@ if($_SESSION['user_type']!=1) {
                 if(empty(mysqli_num_rows($select_menus))){
                     echo "<i><p style='text-align:center; font-size: 1.7rem; position: absolute; 
                     margin-top: 5%; width: 100%; font-weight: bold; color: green;'>
-                    Currently You have no Orders Found</p></i>";
+                    Currently You have no Data Found</p></i>";
                 } else
                 while($row = mysqli_fetch_array($select_menus)) { ?>
                 <tbody>
