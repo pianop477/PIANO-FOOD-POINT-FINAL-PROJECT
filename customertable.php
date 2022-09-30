@@ -28,7 +28,7 @@ customer INNER JOIN orders ON customer.id = orders.customer_id WHERE customer.id
     <body>
 <!--section -->
 <section>
-  <div>
+  <div class="container-fluid">
     <div class="text-center page-header" style="margin-top: auto;">
         <h2 style="margin-top: auto;">My Orders</h2>
     </div>
@@ -47,7 +47,7 @@ customer INNER JOIN orders ON customer.id = orders.customer_id WHERE customer.id
                     if(empty(mysqli_num_rows($select_menus))) {
                       echo "<i><p style='text-align:center; font-size: 1.7rem; position: absolute; 
                       margin-top: 5%; width: 100%; font-weight: bold; color: green;'>
-                      Currently No Data Found</p></i>";
+                      Currently You have No Data Found</p></i>";
                     } else
                     while($row = mysqli_fetch_array($select_menus)) { ?>
                     <tbody>
