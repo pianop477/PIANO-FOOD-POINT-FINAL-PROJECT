@@ -31,25 +31,25 @@ if($_SESSION['user_type']!=1) {
         <!--Navigation links--> 
 <section>
     <div>
-        <h2 class="text-center page-header" style="margin-top: auto;">Update Food Menu</h2>
-    </div>
-    <div style="width: 50%; align-content: center;">
-        <form method="POST" name="update-form">
-            <div class="form-group">
-                <label for="name" class="control-label">Food Type/Name: </label>
-                <input type="hidden" name="id" class="form-control" id="desc" value="<?php echo $fetch_food['id']; ?>">
-                <input type="text" name="food_name" class="form-control" id="desc" value="<?php echo $fetch_food['menu_name']; ?>">
-                <span id="food-text" style="color: red;"></span>
-            </div>
+        <h2 class="text-center page-header">Update Food Menu</h2>
+            <div style="width: 50%; align-content: center;">
+                <form method="POST" name="update-form">
+                    <div class="form-group">
+                        <label for="name" class="control-label">Food Type/Name: </label>
+                        <input type="hidden" name="id" class="form-control" id="desc" value="<?php echo $fetch_food['id']; ?>">
+                        <input type="text" name="food_name" class="form-control" id="desc" value="<?php echo $fetch_food['menu_name']; ?>">
+                        <span id="food-text" style="color: red;"></span>
+                    </div>
 
-            <div class="form-group">
-                <label for="file" class="control-label">Price: </label>
-                <input type="text" name="food_price" class="form-control" value="<?php echo $fetch_food['menu_price']; ?>">
-                <span id="price-text" style="color: red;"></span>
+                    <div class="form-group">
+                        <label for="file" class="control-label">Price: </label>
+                        <input type="text" name="food_price" class="form-control" value="<?php echo $fetch_food['menu_price']; ?>">
+                        <span id="price-text" style="color: red;"></span>
+                    </div>
+                    
+                    <button type="submit" name="edit_menu" class="btn btn-block btn-primary"><i class="fa fa-send"></i> UPDATE MENU</button>
+                </form>
             </div>
-            
-            <button type="submit" name="edit_menu" class="btn btn-block btn-primary"><i class="glyphicon glyphicon-send"></i> UPDATE MENU</button>
-        </form>
     </div>
 </section>
 
