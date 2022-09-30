@@ -1,9 +1,11 @@
 # PIANO-FOOD-POINT-FINAL-PROJECT
 PROJECT TITLE:  PIANO FOOD POINT
 A)	INTRODUCTION 
+
 After completion of 16 weeks for studying in Power Learn Project (PLP) for developers in Africa, this is my final project for validating if I have acquired skills for this training. This project title has developed my career.
 
 B)	PROBLEM STATEMENT
+
 My project deals with selling food Online, after doing observation to my surroundings I have seen that most of small restaurants are not established this system for selling their foods. Most of small restaurants sells their foods locally by waiting customers to come and buy food there where they are. This is time consuming and you cannot get customers who are not interested to attend on your restaurant. Some families want to eat delicious food from any restaurant but they need to be at their home places. So that they can miss this because most of restaurants have no services of distributing foods to their customers at their homes.
 So that I come up with Piano Food Point (PFP) as a solution by creating this project which will help most of small restaurant managers to manage their business and their customers, and also it will be helpful for those customers who wants to enjoy food from restaurant at their homes.
 
