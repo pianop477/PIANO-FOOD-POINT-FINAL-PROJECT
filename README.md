@@ -1,6 +1,6 @@
 # PIANO-FOOD-POINT-FINAL-PROJECT
 PROJECT TITLE:  PIANO FOOD POINT
-A)	INTRODUCTION 
+## A)	INTRODUCTION 
 
 After completion of 16 weeks for studying in Power Learn Project (PLP) for developers in Africa, this is my final project for validating if I have acquired skills for this training. This project title has developed my career.
 
