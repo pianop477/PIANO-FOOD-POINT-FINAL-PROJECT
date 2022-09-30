@@ -1,79 +1,60 @@
-<?php 
+<?php   
+
 include('server.php');
 include('footer.php');
-include('header_admin.php');
+include('header_customer.php');
 
-$select_menus = mysqli_query($conn, "SELECT customer.id, customer.first_name, customer.last_name,customer.email, customer.phone, 
-customer.street, orders.id, orders.order_name, orders.quantity,orders.reply, orders.order_date, orders.total_price FROM 
-customer INNER JOIN orders ON customer.id = orders.customer_id WHERE orders.reply = 1 ORDER BY orders.order_date DESC");
-$count = 1;
-
-if(empty($_SESSION['user_id'])){
+if(empty($_SESSION['user_id'])) {
     header('location:login.php');
 }
-if($_SESSION['user_type']!=1) {
+if($_SESSION['user_type']!=0) {
     header('location:login.php');
   }
+
 ?>
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <title>PFP Processed Orders | Admin</title>
-        <meta charset="utf-8">
+        <title>PFP | Generate Order</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+        
     </head>
     <body>
-<!--Navigation links--> 
-
-        <div>
-            <div class="text-center page-header" style="margin-top: auto;">
-                <h2 style="margin-top: auto;">All Processed Orders</h2>
+<!--Navigation links-->
+<!--section -->
+<section>
+    <div>
+        <h2 class="text-center page-header" style="margin-top: auto;">Place Your Order</h2>
+    </div>
+    <div style="width: 50%; align-content: center;">
+        <form action="#" method="POST" onsubmit="return validate_quantity()">
+            <div class="form-group">
+                <label for="food-name" class="control-label">Food Name/Type</label>
+                <input type="text" name="food" value="<?php echo $_SESSION['chakula'] ?>" class="form-control" disabled>
             </div>
-            <div>
-            <table class="table table-bordered table-responsive table-hover">
-                <thead style="font-size: 1.7rem;">
-                    <tr>
-                        <th></i>S/No</th>
-                        <th><i class="fa fa-user"></i> Customer Name</th>
-                        <th><i class="fa fa-cutlery"></i> Food Type/Name</th>
-                        <th><i class="fa fa-gift"></i> Quantity</th>
-                        <th><i class="fa fa-dollar"></i> Total Price</th>
-                        <th><i class="fa fa-phone"></i> Phone Number</th>
-                        <th><i class="glyphicon glyphicon-map-marker"></i> Street Location</th>
-                        <th><i class="fa fa-clock-o"></i> Order Date</th>
-                    </tr>
-                </thead>
-                <?php
-                if(empty(mysqli_num_rows($select_menus))){
-                    echo "<i><p style='text-align:center; font-size: 1.7rem; position: absolute; 
-                    margin-top: 5%; width: 100%; font-weight: bold; color: green;'>
-                    Currently You have no Orders Found</p></i>";
-                } else
-                while($row = mysqli_fetch_array($select_menus)) { ?>
-                <tbody>
-                    <tr>
-                        <td><?php echo $count++; ?></td>
-                        <td><?php echo $row['first_name'].' '.$row['last_name']; ?></td>
-                        <td><?php echo $row['order_name']; ?></td>
-                        <td><?php echo $row['quantity']; ?></td>
-                        <td><?php echo $row['total_price']; ?></td>
-                        <td><?php echo $row['phone']; ?></td>
-                        <td><?php echo $row['street']; ?></td>
-                        <td><?php echo $row['order_date']; ?></td>
-                    </tr>
-                </tbody>
-                <?php 
-                }
-                ?>
-            </table>
-        </div>
+            <div class="form-group">
+                <label for="initial-price" class="control-label">Price</label>
+                <input type="text" name="price" id= "price" value="<?php echo $_SESSION['price']; ?>" class="form-control" disabled>
+            </div>
+            <div class="form-group">
+                <label for="quantity" class="control-label">Quantity</label>
+                <input type="number" id= "quantity" name="quantity" class="form-control" required>
+                <span id="err-quantity" style="color: red;"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="send_order" class="btn btn-success btn-block"><i class="fa fa-send"></i> SEND ORDER</button>
+            </div>
 
+        </form>
+    
+    </div>
+</section>
+
+<script src="index.js"></script>
     </body>
 </html>
