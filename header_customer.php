@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" style="position: fixed; width: 100%; z-index: 1;">
     <div style="font-size:1.7rem; font-weight: bold;">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,7 +25,7 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-user"></span><?php echo ' ' .$_SESSION['fullname']; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="user_dashboard.php"><i class="fa fa-dashboard"></i> My Dashboard</a></li>
-                            <li><a href="#"><i class="fa fa-bell"></i> Notifications </a></li>
+                            <li><a href="customertable.php"><i class="fa fa-bell"></i> Notifications </a></li>
                             <!--<li><a href="#"><i class="glyphicon glyphicon-user"></i> My Account</a></li>-->
                             <li><a href="server.php?logout=<?php echo $_SESSION['user_id']; ?>"><i class="fa fa-sign-out"></i> Logout</a></a></li>
                         </ul>
