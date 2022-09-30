@@ -45,7 +45,7 @@ include('footer.php');
 	<div class="text-center page-header" style="margin-top: auto;">
 		<h2>SIGN UP FORM</h2>
 	</div>
-	<div style="width: 40%; align-content: center; 
+	<div class="container-fluid" style="width: 40%; align-content: center; 
 	border: 1px solid #ccc; border-radius: 5px; padding: 20px; background: orange;">
 		<form method="POST" action="#" onsubmit="return validate()">
 			<div class="form-group">
