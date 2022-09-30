@@ -44,7 +44,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
                     echo '<h3 style="font-size: 4rem; text-align: center;">0</h3>';
                 }
                 ?></p>
-                <p style=" text-align: center; font-weight:bold; "><a href="ordertable.php" style="color: green;">View Orders 	<i class="fa fa-arrow-circle-right"></i></a></p>
+                <p style=" text-align: center; font-weight:bold; "><a href="ordertable.php" style="color: green;">View Orders 	<i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
             </div>
             <div class="container-fluid" style="width: 38.3%; background: darkred; border-radius: 8px; color:white;">
                 <h4 class="text-center page-header">PROCESSED ORDERS</h4>
@@ -57,7 +57,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
               }
                 ?>
                 </p>
-                <p style=" text-align: center; font-weight:bold; "><a href="ordersprocessed.php" style="color: white;">View Orders 	<i class="fa fa-arrow-circle-right"></i></a></p>
+                <p style=" text-align: center; font-weight:bold; "><a href="ordersprocessed.php" style="color: white;">View Orders 	<i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
             </div>
             
         </div>
@@ -72,7 +72,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
                     echo '<h3 style="font-size: 4rem; text-align: center;">0</h3>';
                 }
                 ?></p>
-                <p style=" text-align: center; font-weight:bold; "><a href="admin_menu.php" style="color: black;">View Menu 	<i class="fa fa-arrow-circle-right"></i></a></p>
+                <p style=" text-align: center; font-weight:bold; "><a href="admin_menu.php" style="color: black;">View Menu 	<i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
             </div>
             <div class="container-fluid" style="width: 38.3%; background: lightgreen; border-radius: 8px;">
                 <h4 class="text-center page-header">USERS</h4>
@@ -84,7 +84,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
                     echo '<h3 style="font-size: 4rem; text-align: center;">0</h3>';
                 }
                 ?></p>
-                <p style=" text-align: center; font-weight:bold; "><a href="users.php" style="color: black;">View Users 	<i class="fa fa-arrow-circle-right"></i></a></p>
+                <p style=" text-align: center; font-weight:bold; "><a href="users.php" style="color: black;">View Users 	<i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
             </div>
         </div>
     
