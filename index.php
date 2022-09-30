@@ -1,6 +1,5 @@
 <?php 
 include('server.php');
-include('footer.php');
 include('header_customer.php');
 //include('footer.php');
 if(empty($_SESSION['user_id'])) {
@@ -26,9 +25,9 @@ $empty_data = "No Menu Found";
     <body>
 <!--section -->
 <section>
-  <div>
-    <div class="text-center page-header" style="margin-top: auto;">
-        <h2>Menu List</h2>
+  <div class="container-fluid" style="position: absolute; width: 100%; margin-top: 1%;">
+    <div class="text-center page-header">
+        <h2 style="margin-top: auto;">Menu List</h2>
         <p style="color: green; font-weight: bold; font-size: 1.5rem;"><i>Press ORDER to Purchase Your Favourite Food</i></p>
     </div>
     <h2>Foods Available</h2>
@@ -45,7 +44,7 @@ $empty_data = "No Menu Found";
                     if(empty(mysqli_num_rows($select_menus))) {
                       echo "<i><p style='text-align:center; font-size: 1.7rem; position: absolute; 
                       margin-top: 5%; width: 100%; font-weight: bold; color: green;'>
-                      Currently No Data Found</p></i>";
+                      Currently You have No Data Found</p></i>";
                     } else
                     while($row = mysqli_fetch_array($select_menus)) { ?>
                     <tbody>
