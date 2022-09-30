@@ -31,7 +31,6 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-user"></span><?php echo ' ' .$_SESSION['fullname']; ?><span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="admin_dashboard.php"><i class="fa fa-dashboard"></i> My Dashboard</a></li>
-                            <li><a href="#"><i class="fa fa-bell"></i> Notifications </a></li>
                            <!-- <li><a href="#"><i class="glyphicon glyphicon-user"></i> My Account</a></li>-->
                             <li><a href="server.php?logout=<?php echo $_SESSION['user_id']; ?>"><i class="fa fa-sign-out"></i> Logout</a></a></li>
                         </ul>
