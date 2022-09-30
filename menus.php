@@ -26,7 +26,8 @@ if($_SESSION['user_type']!=1) {
 <!--Navigation links--> 
 <!--section -->
     <section>
-        <div style="margin-top: auto;">
+        <div class="container-fluid" style="position: absolute; width: 100%; margin-top: 3%;">
+        <div>
             <h2 class="text-center page-header">Add Menu</h2>
         </div>
         <div class="container" style="width: 50%; align-content: center;">
@@ -48,6 +49,7 @@ if($_SESSION['user_type']!=1) {
                     <button type="submit" name="add-menu" class="btn btn-success btn-block"><i class="fa fa-send"></i>  ADD MENU</button>
                 </div>
             </form>
+        </div>
         </div>
     </section>
 
