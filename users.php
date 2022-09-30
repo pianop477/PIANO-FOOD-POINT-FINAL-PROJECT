@@ -1,6 +1,5 @@
 <?php 
 include('server.php');
-include('footer.php');
 include('header_admin.php');
 
 $select_users = mysqli_query($conn, "SELECT * FROM customer WHERE directory = 0 ORDER BY first_name ASC");
@@ -28,7 +27,7 @@ if($_SESSION['user_type']!=1) {
     <body>
  <!--Navigation links--> 
     <!--section-->
-        <div class="container-fluid">
+        <div class="container-fluid" style="position: absolute; width: 100%; margin-top: 1%;">
             <div class="text-center">
                 <h2 class="text-center page-header">Customers List</h2>
             </div>
@@ -46,7 +45,7 @@ if($_SESSION['user_type']!=1) {
                 <?php
                 if(empty(mysqli_num_rows($select_users))) {
                   echo "<i><p style='text-align:center; font-size: 1.7rem; position: absolute; 
-                  margin-top: 5%; width: 100%; font-weight: bold; color: green;'>Currently No Data Found</p></i>";
+                  margin-top: 5%; width: 100%; font-weight: bold; color: green;'>Currently You have No Data Found</p></i>";
                 } else
                 while($row = mysqli_fetch_array($select_users)) { ?>
                 <tbody>
