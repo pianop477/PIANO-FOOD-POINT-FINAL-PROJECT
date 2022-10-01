@@ -33,10 +33,11 @@ if(empty($_SESSION['user_id'])){
     <body>
 <!--Navigation links--> 
 <section>
+    <div class="container-fluid" style="position: absolute; width: 100%; margin-top: 4%;">
     <div>
         <h2 class="text-center page-header" style="margin-top: auto;">Update User Info</h2>
     </div>
-    <div style="width: 50%; align-content: center;">
+    <div class="container-fluid" style="width: 50%; align-content: center;">
         <form method="POST" name="update-form">
             <input type="hidden" name="id" value="<?php echo $$fetch_users['id']; ?>">
             <div class="form-group">
@@ -73,6 +74,7 @@ if(empty($_SESSION['user_id'])){
             </div>
             <button type="submit" name="edit" class="btn btn-block btn-primary"><i class="fa fa-send"></i> Update user</button>
         </form>
+    </div>
     </div>
         <script src="django.js" defer></script>
     </body>
