@@ -35,7 +35,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
         <h2 class="text-center page-header" style="margin-top: auto;">Your Admin Dashboard, 
         <span style="color: blue;"><?php echo $_SESSION['fullname']; ?></span></h2>
         <div class="container-fluid" style="width: 80%; display: flex; justify-content: space-between; align-items: center;">
-            <div class="container-fluid" style="width: 38.3%; background: orange; border-radius: 8px; color:white;">
+            <div class="container-fluid" style="width: 38.3%; background: orange; border-radius: 8px;">
                 <h4 class="text-center page-header">NEW ORDERS</h4>
                 <p><?php 
                 $total_select = mysqli_query($conn, "SELECT * FROM orders WHERE reply = 0");
@@ -73,7 +73,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
                     echo '<h3 style="font-size: 4rem; text-align: center;">0</h3>';
                 }
                 ?></p>
-                <p style=" text-align: center; font-weight:bold; "><a href="admin_menu.php" style="color: black;">View Menu <i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
+                <p style=" text-align: center; font-weight:bold; "><a href="admin_menu.php">View Menu <i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
             </div>
             <div class="container-fluid" style="width: 38.3%; background: lightgreen; border-radius: 8px;">
                 <h4 class="text-center page-header">USERS</h4>
@@ -85,7 +85,7 @@ $order_list = mysqli_query($conn, "SELECT * FROM orders");
                     echo '<h3 style="font-size: 4rem; text-align: center;">0</h3>';
                 }
                 ?></p>
-                <p style=" text-align: center; font-weight:bold; "><a href="users.php" style="color: black;">View Users <i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
+                <p style=" text-align: center; font-weight:bold; "><a href="users.php" style="color: green;">View Users <i class="fa fa-arrow-circle-right fa-2x"></i></a></p>
             </div>
         </div>
     
