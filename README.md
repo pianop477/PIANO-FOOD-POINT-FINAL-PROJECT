@@ -4,12 +4,12 @@ PROJECT TITLE:  PIANO FOOD POINT
 
 After completion of 16 weeks for studying in Power Learn Project (PLP) for developers in Africa, this is my final project for validating if I have acquired skills for this training. This project title has developed my career.
 
-B)	PROBLEM STATEMENT
+## B)	PROBLEM STATEMENT
 
 My project deals with selling food Online, after doing observation to my surroundings I have seen that most of small restaurants are not established this system for selling their foods. Most of small restaurants sells their foods locally by waiting customers to come and buy food there where they are. This is time consuming and you cannot get customers who are not interested to attend on your restaurant. Some families want to eat delicious food from any restaurant but they need to be at their home places. So that they can miss this because most of restaurants have no services of distributing foods to their customers at their homes.
 So that I come up with Piano Food Point (PFP) as a solution by creating this project which will help most of small restaurant managers to manage their business and their customers, and also it will be helpful for those customers who wants to enjoy food from restaurant at their homes.
 
-C)	PURPOSE OF THE PROJECT 
+## C)	PURPOSE OF THE PROJECT 
 The project has many functionalities so that makes the system dynamic and usable to users. The general purpose is to make easy way of selling foods through online and to track different information of customers like the order ordered by customer, customer phone number and much more.
 For example: 
 •	Customers may able to register themselves in the system and to order different food according to the menus available in the list.
@@ -19,7 +19,7 @@ For example:
 •	Admin may able to add menu list (list of food) available per day or to remove menu from the menu list.
 •	After all the users may able to log out in the system and users information needed in order to login again.
 
-D)	TECHNICAL REQUIREMENT
+## D)	TECHNICAL REQUIREMENT
 Programming language applied to my project includes;
 •	HTML, CSS, JavaScript and PHP are the Programming languages used in my project so that make up front end and back end of my project.
 •	Also I have added some Bootstrap files in order to make my system look good and attractive. So that I include online links as bootstrap files so that they need internet connection in order to work. 
@@ -27,7 +27,7 @@ Programming language applied to my project includes;
 •	Coding environment used is VScode.
 •	I developed my database using Mysql. Database name is called RESTAURANT which have 3 tables (customer/users, orders and menus).
 
-E)	PROJECT PLAN
+## E)	PROJECT PLAN
 The following is a schedule of my project building development from August 26 to September 30.
 Week 	Date 	Activity 
 Week 1	26 Aug – 2 Sept	Finding Project
@@ -42,7 +42,7 @@ Week 4	19 Sept – 26 Sept 	Back End Development
 Week 5	27 Sept – 30 Sept 	Finalizing Project & Submission
 
 
-F)	HOW SYSTEM WORKS (USABILITY)
+## F)	HOW SYSTEM WORKS (USABILITY)
 	My system needs user credentials by Signing Up an account which will be used for signing in to the system in order to access it. So the sign up form is available for user for create their account.
 	Once account created user will use email and password to login in the system. So that the user must enter his/her email address used for signing up and password in order to login in the system.
 	My system has two dashboards interface; first is for normal customers and second for admin.
@@ -61,7 +61,7 @@ Password: 1234
 
 This is a default account as a manager account. Use it to view dashboard of an admin how it looks like and its functionality.
 
-Roles of a normal customer after logged in:
+## Roles of a normal customer after logged in:
 i.	To create account if he/she doesn’t have
 ii.	To view menus listed in the system
 iii.	To select her/his favorite menu (food) and to press order
@@ -75,7 +75,7 @@ vii.	To forget password if not remembered
 
 
 
-Role of admin (manager) after logged in:
+## Role of admin (manager) after logged in:
 i.	To view and delete orders sent by customers
 ii.	To view, add, update and delete menus list.
 iii.	To view, update and delete list of customers registered in the system.
@@ -94,21 +94,56 @@ vii.	To reply a message to his customers after receiving their orders.
 	Location (where the customer is) in case if there is delivery to their home, 
 	Order date and time
 	Button to reply the order
-N.B
+## N.B
 The system offers an option of assigning normal customer to be an admin. This function is done by admin only (manager) – by logging in by using admin account go to Users >> customers >> update >> in user type option by default is 0 – this is a normal user, if you want to change to be an admin, remove 0 and enter 1 – the user type will be changed and now the user will be an admin. So that will able to perform all roles as an admin.
 Key 		user type 
 0	- normal us
 1	– admin 
 
-CONCLUSION
+## CONCLUSION
 This project is an individual work in some ways can have weakness, but it is a part of learning so that I am still learning more and I hope I will develop my career and become competent in this field.
 
 
 
-CONTANT INFORMATION
+## CONTANT INFORMATION
 Name: 	Frank Mathias Masaka
 Phone: 	+255 678 669 000
 Email: 	pianop477@gmail.com
+
+## ATTACHMENTS
+
+## LIST OF TABLES IN DATABASE
+![image](https://user-images.githubusercontent.com/108887102/193447940-3db6f6aa-68b1-4dff-95b3-f20ff067a8af.png)
+
+## TABLES AND THEIR RELATIONSHIP
+![image](https://user-images.githubusercontent.com/108887102/193447995-73bbe394-3b5a-4239-abd6-35477e541833.png)
+
+## EXAMPLE OF DATA FOUND IN CUSTOMER TABLE
+![image](https://user-images.githubusercontent.com/108887102/193448169-cb00a5f2-149e-4598-b179-0048825abe80.png)
+here the user with directory 1 is an admin, the rest are normal users (customers)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
