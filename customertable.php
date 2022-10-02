@@ -58,7 +58,7 @@ customer INNER JOIN orders ON customer.id = orders.customer_id WHERE customer.id
                             <td><?php echo $row['total_price']; ?></td>
                             <td><?php echo $row['order_date']; ?></td>
                             <td><?php if($row['reply']==1){echo '<span style=" color:green;">You will Receive your Order shortly,
-                                 Thanks for Purchasing with us</span>';} else { echo '<span style="color: green;">In Progress</span>'; } ?></td>
+                                 Thanks for Purchasing with us</span>';} else { echo '<span style="color: red;">In Progress</span>'; } ?></td>
                         </tr>
 
                     </tbody>
