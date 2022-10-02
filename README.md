@@ -113,14 +113,16 @@ This project is an individual work in some ways can have weakness, but it is a p
 ![image](https://user-images.githubusercontent.com/108887102/193447995-73bbe394-3b5a-4239-abd6-35477e541833.png)
 
 ## EXAMPLE OF DATA FOUND IN **CUSTOMER** TABLE
-![image](https://user-images.githubusercontent.com/108887102/193448169-cb00a5f2-149e-4598-b179-0048825abe80.png)
+![image](https://user-images.githubusercontent.com/108887102/193448958-88560cf8-beeb-4238-88d4-9228f0ae8ec2.png)
+
 here the user with **directory 1** is an admin, the rest are normal users (customers), **you can update normal user to admin by changing directory from 0 to 1 in admin** dashboard by updating customer information
 
 ## EXMPLE OF DATA FOUND IN **MENUS** TABLE
 ![image](https://user-images.githubusercontent.com/108887102/193448432-e9a251b4-a20e-4d6e-82c4-4c9f1d5ecae9.png)
 These are samples you can add more menus in admin dashboard
 ## EXAMPLE OF DATA FOUND IN **ORDERS** TABLE
-![image](https://user-images.githubusercontent.com/108887102/193448571-9f74a617-5d61-4aa4-9fed-a1573c92312a.png)
+![image](https://user-images.githubusercontent.com/108887102/193449058-43450efb-9116-4966-9918-f3e6c84a4f5e.png)
+
 The orders with **reply 1** are those which have been processed **(customer they will get notification about the orders they send to admin)** and those with **reply 0** are not processed (new orders)
 
 ## CONTANT INFORMATION
