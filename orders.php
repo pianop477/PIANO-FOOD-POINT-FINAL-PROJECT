@@ -27,34 +27,37 @@ if($_SESSION['user_type']!=0) {
     <body>
 <!--Navigation links-->
 <!--section -->
-<section>
-    <div>
-        <h2 class="text-center page-header" style="margin-top: auto;">Place Your Order</h2>
-    </div>
-    <div style="width: 50%; align-content: center;">
-        <form action="#" method="POST" onsubmit="return validate_quantity()">
-            <div class="form-group">
-                <label for="food-name" class="control-label">Food Name/Type</label>
-                <input type="text" name="food" value="<?php echo $_SESSION['chakula'] ?>" class="form-control" disabled>
-            </div>
-            <div class="form-group">
-                <label for="initial-price" class="control-label">Price</label>
-                <input type="text" name="price" id= "price" value="<?php echo $_SESSION['price']; ?>" class="form-control" disabled>
-            </div>
-            <div class="form-group">
-                <label for="quantity" class="control-label">Quantity</label>
-                <input type="number" id= "quantity" name="quantity" class="form-control" required>
-                <span id="err-quantity" style="color: red;"></span>
-            </div>
-            <div class="form-group">
-                <button type="submit" name="send_order" class="btn btn-success btn-block"><i class="fa fa-send"></i> SEND ORDER</button>
-            </div>
-
-        </form>
-    
-    </div>
-</section>
-
+<body>
+    <section>
+        <div class="container-fluid" style="position: absolute; width: 100%; margin-top: 3%;">
+        <div>
+            <h2 class="text-center page-header">Place Your Order</h2>
+        </div>
+        <div class="container" style="width: 50%; align-content: center;">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    <label for="food-name" class="control-label">Food Name/Type</label>
+                    <input type="text" name="food_name" class="form-control" id="food" value="<?php echo $_SESSION['chakula']; ?>">
+                    <span id="food-text" style="color:red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="initial-price" class="control-label">Price</label>
+                    <input type="text" name="food_price" class="form-control" id="price" value="<?php echo $_SESSION['price']; ?>">
+                    <span id="price-text" style="color:red;"></span>
+                </div>
+                <div class="form-group">
+                    <label for="quantity" class="control-label">Quantity</label>
+                    <input type="number" name="quantity" class="form-control" required> 
+                </div>
+                <div class="form-group">
+                    <button type="submit" name="send_order" class="btn btn-success btn-block"><i class="fa fa-send"></i>  SEND ORDER</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    </body>
 <script src="index.js"></script>
     </body>
 </html>
