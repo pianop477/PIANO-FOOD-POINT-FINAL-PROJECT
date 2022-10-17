@@ -52,7 +52,7 @@ Week 5	27 Sept – 30 Sept 	Finalizing Project & Submission
 
 	In my database I assigned a normal user with as a customer (with value 0) and restaurant manager as admin (with value 1), as shown in the picture below;
  
-In the directory column in the picture above assign to customers is 0/1 – the one which have value 0 means it is a normal customer but one with value 1 it is an admin. So once you change directory to be 0 or 1 also you change user type of a customer.
+In the directory column in the picture above assign to customers is 0/1 – the one which have value 0 means it is a normal customer but one with value 1 it is an admin. So once you change user type to be customer or admin also you change directory of a customer.
 	After logged in, if user type is normal customer, the system will direct to his or her dashboard, and normally in my system all customers will be directed to the place where they will found there is menu list (foods available) and ready to order foods.
 	If user type is admin system will direct to admin dashboard and here after logged in you will see list of orders ordered by normal customers.
 Use this account for an example as admin account:
