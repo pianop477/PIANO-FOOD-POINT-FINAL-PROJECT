@@ -63,13 +63,13 @@ Password: 1234
 This is a default account as a manager account. Use it to view dashboard of an admin how it looks like and its functionality.
 
 ## Roles of a normal customer after logged in:
-i.	To create account if he/she doesn’t have
-ii.	To view menus listed in the system
-iii.	To select her/his favorite menu (food) and to press order
-iv.	To logout in the system after use.
-v.	To view history of order he or she ordered
-vi.	To update his or her information like phone number, street, names and so on.
-vii.	To forget password if not remembered
+To create account if he/she doesn’t have
+To view menus listed in the system
+To select her/his favorite menu (food) and to press order
+To logout in the system after use.
+To view history of order he or she ordered
+To update his or her information like phone number, street, names and so on.
+To forget password if not remembered
 
 
 
@@ -77,13 +77,13 @@ vii.	To forget password if not remembered
 
 
 ## Role of admin (manager) after logged in:
-i.	To view and delete orders sent by customers
-ii.	To view, add, update and delete menus list.
-iii.	To view, update and delete list of customers registered in the system.
-iv.	To update customer’s user type from normal customer to admin or vice versa. So after being admin you assign him or her other roles. (Shift customer to admin).
-v.	To logout in the system after use.
-vi.	To forget password if not remembered.
-vii.	To reply a message to his customers after receiving their orders.
+To view and delete orders sent by customers
+To view, add, update and delete menus list.
+To view, update and delete list of customers registered in the system.
+To update customer’s user type from normal customer to admin or vice versa. So after being admin you assign him or her other roles. (Shift customer to admin).
+To logout in the system after use.
+To forget password if not remembered.
+To reply a message to his customers after receiving their orders.
 
 	So, customer send orders of food he or she likes and the order will be sent to admin.
 	After order sent to admin, admin will able to track the following details;
