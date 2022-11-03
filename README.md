@@ -25,7 +25,8 @@ Programming language applied to my project includes;
 •	Also I have added some Bootstrap files in order to make my system look good and attractive. So that I include online links as bootstrap files so that they need internet connection in order to work. 
 •	The framework used is XAMPP
 •	Coding environment used is VScode.
-•	I developed my database using Mysql. Database name is called RESTAURANT which have 3 tables (customer/users, orders and menus).
+•	I developed my database using Mysql. Database name is called RESTAURANT (I uploaded it on my files in github) which have 3 tables (customer/users, orders and menus).
+. I launched my Project for test using xampp in my local machine (local host).
 
 ## E)	PROJECT PLAN
 The following is a schedule of my project building development from August 26 to September 30.
@@ -95,10 +96,9 @@ vii.	To reply a message to his customers after receiving their orders.
 	Order date and time
 	Button to reply the order
 ## N.B
-The system offers an option of assigning normal customer to be an admin. This function is done by admin only (manager) – by logging in by using admin account go to Users >> customers >> update >> in user type option by default is 0 – this is a normal user, if you want to change to be an admin, remove 0 and enter 1 – the user type will be changed and now the user will be an admin. So that will able to perform all roles as an admin.
-Key 		user type 
-0	- normal us
-1	– admin 
+The system offers an option of assigning normal customer to be an admin. This function is done by admin only (manager) – by logging in by using admin account go to Users >> customers >> shift user >> in user type option you can select either customer or admin....by doing that you will be able to change type of user in database and also roles will be changed from normal customer (USER)  to be an admin (RESTAURANT MANAGER).
+
+ALSO the system track the active time when user using the platform.. so if user will stop using the platform within 10 minutes or above, the session will expire and will want to sign in again. (SESSION TIMEOUT SET FOR 10 MINUTES FROM THE LAST ACTIVITY DONE BY USER).
 
 ## CONCLUSION
 This project is an individual work in some ways can have weakness, but it is a part of learning so that I am still learning more and I hope I will develop my career and become competent in this field.
