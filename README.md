@@ -2,7 +2,7 @@
 PROJECT TITLE:  PIANO FOOD POINT
 ## A)	INTRODUCTION 
 
-After completion of 16 weeks for studying in Power Learn Project (PLP) for developers in Africa, this is my final project for validating if I have acquired skills for this training. This project title has developed my career.
+After completion of 16 weeks for studying in Power Learn Project (PLP) for developers in Africa, this is my final project for validating if I have acquired skills for this training. This project title has developed my career so that  my knowledge has been increased day to day compared for the earlier days. i would like to thank all PLP community for their support materially and all things they provided to me so as to enhance my skills and knowledge.
 
 ## B)	PROBLEM STATEMENT
 
