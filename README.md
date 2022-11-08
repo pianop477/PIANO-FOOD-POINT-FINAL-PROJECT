@@ -98,7 +98,6 @@ To reply a message to his customers after receiving their orders.
 ## N.B
 The system offers an option of assigning normal customer to be an admin. This function is done by admin only (manager) – by logging in by using admin account go to Users >> customers >> shift user >> in user type option you can select either customer or admin....by doing that you will be able to change type of user in database and also roles will be changed from normal customer (USER)  to be an admin (RESTAURANT MANAGER).
 
-ALSO the system track the active time when user using the platform.. so if user will stop using the platform within 10 minutes or above, the session will expire and will want to sign in again. (SESSION TIMEOUT SET FOR 10 MINUTES FROM THE LAST ACTIVITY DONE BY USER).
 
 ## CONCLUSION
 This project is an individual work in some ways can have weakness, but it is a part of learning so that I am still learning more and I hope I will develop my career and become competent in this field.
