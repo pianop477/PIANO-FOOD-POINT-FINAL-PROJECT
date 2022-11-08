@@ -1,20 +1,5 @@
 <?php 
 session_start();
-//check the session start time is se or not...........................
-if(!isset($_SESSION['start'])) {
-    //set the session start time
-    $_SESSION['start'] = time();
-
-}
-//check the session is expired or not..................................
-if(isset($_SESSION['start']) && (time() - $_SESSION['start'] > 600)) {
-    //unset the session variables
-    session_unset();
-
-    //destroy the session
-    session_destroy();
-    echo "Session timeout";
-}
 
 include('dbconnect.php');
 
