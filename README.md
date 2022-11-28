@@ -103,6 +103,12 @@ The system offers an option of assigning normal customer to be an admin. This fu
 ## CONCLUSION
 This project is an individual work in some ways can have weakness, but it is a part of learning so that I am still learning more and I hope I will develop my career and become competent in this field.
 
+## Arrangement of files in my local machine 
+![image](https://user-images.githubusercontent.com/108887102/204360243-68a2ce6e-5b04-4c5a-8cb9-d231153338fe.png)
+
+inside the folder which contain all files of my project, there is a folder known as "images", this folder directory contain images of foods so as a customer may view the food type and its food image, but unfortunately i failed to upload this folder on my repository.
+
+
 
 ## ATTACHMENTS
 ## Admin Dashboard Web Interface:
