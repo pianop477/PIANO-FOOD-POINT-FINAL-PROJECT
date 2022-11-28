@@ -84,6 +84,7 @@ To update customer’s user type from normal customer to admin or vice versa. So
 To logout in the system after use.
 To forget password if not remembered.
 To reply a message to his customers after receiving their orders.
+To update her or his profile
 
 	So, customer send orders of food he or she likes and the order will be sent to admin.
 	After order sent to admin, admin will able to track the following details;
@@ -104,6 +105,38 @@ This project is an individual work in some ways can have weakness, but it is a p
 
 
 ## ATTACHMENTS
+##Admin Dashboard Web Interface:
+![image](https://user-images.githubusercontent.com/108887102/204351919-9321605d-7a08-4c58-ad63-734b5288b7c0.png)
+
+Description;
+In New Order tab........... here it count all new orders ordered by customers
+![image](https://user-images.githubusercontent.com/108887102/204354639-858e6168-95da-41f2-8cef-708a57bc1f4d.png)
+
+In processed order tab .........here it count all orders which has been processed by manager/admin
+![image](https://user-images.githubusercontent.com/108887102/204354744-dae31c8d-176d-4390-8504-6fb760effae3.png)
+
+In all menu tab............. here it count number of menus available in the system which uploaded by manager
+![image](https://user-images.githubusercontent.com/108887102/204354949-073297a1-52ed-48a5-a183-c5a8d6d4348e.png)
+
+In users tab................. here it count the total number of users registered in my system as customers.
+![image](https://user-images.githubusercontent.com/108887102/204355131-7fd6454f-2139-4978-ace8-07eec2a253bf.png)
+all the above figures are the features found in admini or manager interface on the website
+
+##customer Dashboard Web Interface:
+![image](https://user-images.githubusercontent.com/108887102/204355951-e2430e02-2848-4817-b61a-6ec46fcb4d0d.png)
+
+##My Cart 
+here it counts the number of orders ordered by customer himself or herself and also it show if the order has been processed or not.
+![image](https://user-images.githubusercontent.com/108887102/204356605-52e017ba-4f60-4e8a-b818-c77de053f252.png)
+in the notification column the one with green text colour means that the order already processed by restaurant manager and the one with red text colour means that not processed
+
+##All menus
+here it counts number of menus available in the system and here is how it looks once clicked
+![image](https://user-images.githubusercontent.com/108887102/204357311-13bee551-38ee-4476-8ae8-c9c3bd55134a.png)
+
+in each food item there's order button, when clicked allow user to make order of his or her favourite food
+
+
 
 ## LIST OF TABLES IN DATABASE
 ![image](https://user-images.githubusercontent.com/108887102/193447940-3db6f6aa-68b1-4dff-95b3-f20ff067a8af.png)
