@@ -105,7 +105,7 @@ This project is an individual work in some ways can have weakness, but it is a p
 
 
 ## ATTACHMENTS
-##Admin Dashboard Web Interface:
+## Admin Dashboard Web Interface:
 ![image](https://user-images.githubusercontent.com/108887102/204351919-9321605d-7a08-4c58-ad63-734b5288b7c0.png)
 
 Description;
@@ -122,15 +122,15 @@ In users tab................. here it count the total number of users registered
 ![image](https://user-images.githubusercontent.com/108887102/204355131-7fd6454f-2139-4978-ace8-07eec2a253bf.png)
 all the above figures are the features found in admini or manager interface on the website
 
-##customer Dashboard Web Interface:
+## customer Dashboard Web Interface:
 ![image](https://user-images.githubusercontent.com/108887102/204355951-e2430e02-2848-4817-b61a-6ec46fcb4d0d.png)
 
-##My Cart 
+## My Cart 
 here it counts the number of orders ordered by customer himself or herself and also it show if the order has been processed or not.
 ![image](https://user-images.githubusercontent.com/108887102/204356605-52e017ba-4f60-4e8a-b818-c77de053f252.png)
 in the notification column the one with green text colour means that the order already processed by restaurant manager and the one with red text colour means that not processed
 
-##All menus
+## All menus
 here it counts number of menus available in the system and here is how it looks once clicked
 ![image](https://user-images.githubusercontent.com/108887102/204357311-13bee551-38ee-4476-8ae8-c9c3bd55134a.png)
 
