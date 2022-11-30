@@ -295,17 +295,11 @@ if(isset($_POST['update'])) {
    $update_user = mysqli_query($conn, "UPDATE customer SET first_name = '$firstName', last_name = '$lastName', 
    street = '$streetName', phone = '$phoneNumber' WHERE id = '$id' ");
 
-   if($update_user && $_SESSION['id']==0) {
+   if($update_user) {
       echo $msg = "
       <script>
          alert('User Info Updated Successfully');
-         document.location.href = 'admin_dashboard.php';
-      </script>";
-   }else {
-      echo $msg = "
-      <script>
-         alert('User Infor Updated Successfully');
-         document.location.href = 'user_dashboard.php';
+         document.location.href = 'details.php';
       </script>";
    }
 
